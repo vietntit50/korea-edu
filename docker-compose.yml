@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: korea-edu-postgres
+    environment:
+      POSTGRES_DB: korea_edu_chatbot
+      POSTGRES_USER: chatbot
+      POSTGRES_PASSWORD: chatbot
+    ports:
+      - "5432:5432"
+    volumes:
+      - korea_edu_pg_data:/var/lib/postgresql/data
+
+volumes:
+  korea_edu_pg_data:

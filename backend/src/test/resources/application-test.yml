@@ -1,0 +1,22 @@
+spring:
+  flyway:
+    enabled: false
+  datasource:
+    url: jdbc:h2:mem:korea_edu_test;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+facebook:
+  app-secret: test-app-secret
+  verify-token: test-verify-token
+  page-access-token: test-page-token
+  signature-verification-enabled: true
+
+messenger:
+  send-enabled: false

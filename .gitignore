@@ -1,0 +1,42 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.staging.example
+
+# Maven / Java
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker (local overrides only)
+docker-compose.override.yml
+
+# Staging session notes (tunnel URL changes each run)
+docs/ops/STAGING_CURRENT.md
